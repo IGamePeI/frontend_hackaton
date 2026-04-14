@@ -1,53 +1,13 @@
 * {
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
-    display: flex;
-    color: white;
-    flex-direction: row;
-    background-color: #76B1FF;
-    gap: 50px;
-    height: 100px;
-    border-radius: 50px;
-}
-
-header .logo{
-    margin: 20px;
-}
-
-.HeaderUl{
-    margin-right: 30px;
-    margin-left: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 25px;  
-}
-
-.header__btns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 16px;
-    margin-left: 400px;
-    margin-top: 50%;
-}
-
-.search{
-    margin-left: 50px;
-    height: 43px;
-    margin-top: 10px;
-    border-radius: 50px;
-    margin-top: 20px;
-}
-
-.HeaderUl li{
-    margin-left: 90px;
+body {
+    --accent: #8900f0;
+    --bg: #76b1ff;
+    --bg-2: #3a00f6;
+    
 }
