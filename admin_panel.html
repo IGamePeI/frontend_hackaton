@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель Администратора</title>
+</head>
+<body>
+    <div class="order">
+        <h3>Номер заказа</h3>
+        <select class="order_status">
+            <option>Заказ собирается</option>
+            <option>Заказ доставляется</option>
+            <option>Заказ доставлен</option>
+        </select>
+        <p>Блюда в заказе:</p>
+        <ul class="order_dishes">
+            <li>Блюдо 1<button type="button">Удалить</button></li>
+            <li>Блюдо 2<button type="button">Удалить</button></li>
+            <li>Блюдо 3<button type="button">Удалить</button></li>
+        </ul>
+        <button type="submit">Применить</button>
+    </div>
+    
+    <div class="change_dish">
+        <h3>Название блюда</h3>
+        <p class="dish_id">ID блюда</p>
+        <p>Имя: <input type="text" class="dish_name" placeholder="Сюда имя"></p>
+        <p>Ссылка на фото: <input type="text" class="dish_photo_url placeholder="Ссылка на фото"></p>
+        <p>Описание: <input type="text" class="dish_description" placeholder="Сюда описание"></p>
+        <p>Цена: <input type="number" class="dish_price" placeholder="Сюда цену"></p>
+        <p>Вес: <input type="number" class="dish_weight" placeholder="Сюда вес"></p>
+        <p>Категория: <select>
+            <option>Прошлое</option>
+            <option selected>Настоящее</option>
+            <option>Будущее</option>
+        </select></p>
+        <p>Создан:</p>
+        <p>Обновлен:</p>
+        <button type="submit">Применить</button>
+    </div>
+    <div class="create_dish">
+        <h3>Создать блюдо</h3>
+        <p class="dish_id">ID блюда</p>
+        <p>Имя: <input type="text" class="dish_name" placeholder="Сюда имя"></p>
+        <p>Ссылка на фото: <input type="text" class="dish_photo_url placeholder="Ссылка на фото"></p>
+        <p>Описание: <input type="text" class="dish_description" placeholder="Сюда описание"></p>
+        <p>Цена: <input type="number" class="dish_price" placeholder="Сюда цену"></p>
+        <p>Вес: <input type="number" class="dish_weight" placeholder="Сюда вес"></p>
+        <p>Категория: <select>
+            <option>Прошлое</option>
+            <option>Настоящее</option>
+            <option>Будущее</option>
+        </select></p>
+        <button type="submit">Создать</button>
+    </div>
+</body>
+</html>
