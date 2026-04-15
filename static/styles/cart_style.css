@@ -1,0 +1,70 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dish{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border: 1px solid #0b1919;
+    height: 100%;
+    background-color: #1d2f30
+}
+
+.dish_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    padding: 30px 15px;
+    height: 120px;
+    background-color: #0b1919;
+    max-width: 100%
+}
+
+
+.dish_price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(56, 144, 212);
+    font-size: larger;
+}
+
+.dish_weight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: darkgrey;
+    font-size: small;
+}
+
+.dish_button{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #49cbe2;
+    padding: 10px 28px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    line-height: 150%;
+    color: #49b9e2;
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin-top: auto;
+    padding: 10px 70px;
+    cursor: pointer
+}
