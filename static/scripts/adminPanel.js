@@ -1,6 +1,6 @@
 let currentUser = null;
-adminSection = document.getElementById();
-collectorSection = document.getElementById();
+adminSection = document.getElementById('admin_section');
+collectorSection = document.getElementById('collector_section');
 
 function loadCollectorSection() {
     collectorSection.style.display = 'flex';

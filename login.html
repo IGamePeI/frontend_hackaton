@@ -10,12 +10,10 @@
 </head>
 <body>
     <form id="auth_form" class="auth_form">
-        <h1>Вход</h1>
-        <p>Почта:</p>
-        <input type="email" class="email_input" id="email_input" placeholder="Почта">
-        <p>Пароль:</p>
-        <input type="password" class="password_input" id="password_input" placeholder="Пароль">
-        <p><button type="submit" class="login_button" id="login_button">Войти</button></p>
+        <input type="email" id="email" class="email" placeholder="Email" required>
+        <input type="password" id="password" class="password" placeholder="Пароль" required>
+        <button type="submit" class="submit-btn">Продолжить</button>
     </form>
+    <script src="./static/scripts/login.js"></script>
 </body>
 </html>
