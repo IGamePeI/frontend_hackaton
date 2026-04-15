@@ -26,5 +26,65 @@ header {
 }
 
 .header_links{
-    
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.slider{
+    width: 100%;
+}
+
+.menu h1{
+    text-align: center;
+}
+
+.dish{
+    display: flex;
+    background-color: #FFEFE7;
+    width: 350px;
+    height: 500px;
+    border-radius: 25px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.dish img {
+    margin: 10%;
+    width: 200px;     
+    height: 200px;       
+    border-radius: 50%;   
+    object-fit: cover;    
+    margin-right: 200px;  
+}
+
+.dish_name{
+    color: #FF6002;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.dish_weight{
+    font-size: larger;
+}
+
+.dish_price{
+    margin-right: 50px;
+    font-size: x-large;
+}
+
+.buy_dish{
+    margin-top: 7%;
+    margin-bottom: 15px;
+}
+
+.add_to_cart{
+    background-color: #FF7A2B;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 15px;
+    height: 40px;
+    padding: 10px;
+    font-size: 13.7px;
 }
