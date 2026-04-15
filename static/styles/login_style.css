@@ -1,0 +1,92 @@
+*{
+    text-decoration: none;
+
+    box-sizing: border-box;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth_form{
+    flex: 1;
+    flex-direction: column;
+    width: 440px;
+    align-content: center;
+    border-left: 1px solid #e5e5e5;
+    margin-left: 500px;
+    min-width: 200px;
+    padding-left: 200px;
+    background-color: dodgerblue;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: .375rem .75rem;
+    width: 500px;
+    padding: 10px 70px;
+    border-radius: 10px;
+}
+
+.login_button{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border: 1px solid #49cbe2;
+    padding: 10px 28px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    line-height: 150%;
+    color: #49b9e2;
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin-top: auto;
+    padding: 10px 70px;
+    cursor: pointer
+}
+
+.email_input {
+    outline: 0;
+    border: 1px solid #fff;
+    padding: 10px 16px;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0b1919;
+    background-color: #fff;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s
+}
+
+.password_input {
+    outline: 0;
+    border: 1px solid #fff;
+    padding: 10px 16px;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0b1919;
+    background-color: #fff;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s
+}
+
+.password_input::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #899d9d;
+    -webkit-transition: color .3s;
+    transition: color .3s
+}
+
+.email-input::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #899d9d;
+    -webkit-transition: color .3s;
+    transition: color .3s
+}
