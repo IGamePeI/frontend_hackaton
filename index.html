@@ -2,68 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/styles/style.css">
-    <title>Машина Времени</title>
+    <title>Document</title>
 </head>
+<header>
+    <img src="./static/images/LogoSite.png" alt="Лого">
+    <div class="header_links">
+        <a href="./index.html">Меню</a>
+        <a href="./cart.html">Корзина</a>
+        <a href="./login.html"><img class="avatar_icon" src="./static/images/avatar-icon.png"></a>
+    </div>
+</header>
 <body>
-    <header>
-        <a href="./index.html">
-            <img src="./static/images/LogoSite.png" alt="Логотип" class="logo">
-            <div class="links">
-                <a class="header_link" href="#past_menu">Прошлое</a>
-                <a class="header_link" href="#present_menu">Настоящее</a>
-                <a class="header_link" href="#future_menu">Будущее</a>
-                <a class="header_link" href="">
-                    <i class="fa-solid fa-cart"></i>
-                </a>
-            </div>
-        </a>
-    </header>
-    <div class="container">
-        <div id="present_menu" class="menu">
-            <span class="menu_name">Меню настоящего</span>
-            <div class="dishes_list_past">
-                <div class="dish_item">
-                    <div class="dish">
-                        <img src="./static/images/tut.png" alt="" class="dish_img">
-                        <h3 class="dish_title">Название блюда</h3>
-                        <p class="dish_price">много рублей</p>
-                        <p class="dish_weight">много грамм(мл)</p>
-                        <button class="dish_button">В корзину</button>
-                    </div>
+    <img class="slider" src="./static/images/слайдер.png">
+    <div class="menu">
+        <h1>Наше меню:</h1>
+        <div class="dishes" id="dishes">
+            <div class="dish" id="dish">
+                <img src="./static/images/tut.png" alt="dish_img">
+                <div class="dish_text" id="dish_text">
+                    <p>Рассольник</p>
+                    <p>350 г</p>
+                </div>
+                <div class="buy_dish" id="buy_dish">
+                    <p>499 руб</p>
+                    <button class="add_to_cart" id="add_to_cart">Добавить в корзину</button>
                 </div>
             </div>
         </div>
-
-        <div id="future_menu" class="menu">
-            <span class="menu_name">Меню будущего</span>
-            <div class="dishes_list_present" id="dishes_list_present">
-
-            </div>
-        </div>
-
-        <div id="past_menu" class="menu">
-            <span class="menu_name">Меню прошлого</span>
-            <div class="dishes_list_future" id="dishes_list_future">
-
-            </div>
-        </div>
     </div>
-    <footer>
-        <div class="footer_logo">
-        <img src="./static/images/LogoSite.png" alt="logo" class="logo">
-        <p>©2026</p>
-        </div>
-        <div class="links">
-                <a href="#past_menu">Прошлое</a>
-                <a href="#present_menu">Настоящее</a>
-                <a href="#future_menu">Будущее</a>
-        </div>
-        <div class="footer_nomer">+ 7 (977) 443 64 83</div>
-    </footer>
-    <script src="./static/scripts/script.js"></script>
 </body>
 </html>
