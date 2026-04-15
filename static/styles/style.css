@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background-color: var(--bg-2);
+    background-color: #a1caff;
     display: flex;
     padding: 10px 40px 10px 40px;
     flex-direction: row;
@@ -36,13 +36,14 @@ header {
 
 .logo {
     height: 50px;
-    width: 50px;
+    width: 100px;
     border-radius: 12px;
 }
 
 .links {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    gap: 50px;
     color: var(--accent);
     font-size: 20px;
     transition: transform 0.5s ease;
@@ -50,6 +51,14 @@ header {
 
 .links>a:hover {
     transform: translateY(-2.5px);
+}
+.shopping_cart {
+    width: 35px;
+    height: 35px;
+}
+.user {
+    width: 35px;
+    height: 35px;
 }
 
 .container {
