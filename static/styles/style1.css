@@ -5,3 +5,34 @@
     box-sizing: border-box;
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    list-style-type: none; 
+    padding: 0;            
+    margin: 0;             
+}
+.order {
+    display: flex;
+    flex-direction:column;
+    gap: 15px;
+}
+.change_dish {
+    display: flex;
+    flex-direction:column;
+    gap: 15px;
+}
+.create_dish {
+    display: flex;
+    flex-direction:column;
+    gap: 15px;
+}
+.change_employe {
+    display: flex;
+    flex-direction:column;
+    gap: 15px;
+}

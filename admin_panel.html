@@ -8,23 +8,40 @@
 </head>
 <body>
     <div class="order">
-        <h3>Номер заказа</h3>
-        <select class="order_status">
-            <option>Заказ собирается</option>
-            <option>Заказ доставляется</option>
-            <option>Заказ доставлен</option>
+        <h3>Заказы</h3>
         </select>
-        <p>Блюда в заказе:</p>
         <ul class="order_dishes">
-            <li>Блюдо 1<button type="button">Удалить</button></li>
-            <li>Блюдо 2<button type="button">Удалить</button></li>
-            <li>Блюдо 3<button type="button">Удалить</button></li>
+            <li>Заказ №1<button type="button"><p><select>
+            <option>Принят</option>
+            <option>Готовится</option>
+            <option>Готов</option>
+            <option>В доставке</option>
+            <option>В доставке</option>
+        </select></p></button></li>
+        </ul>
+        <ul class="order_dishes">
+            <li>Заказ №2<button type="button"><p><select>
+            <option>Принят</option>
+            <option>Готовится</option>
+            <option>Готов</option>
+            <option>В доставке</option>
+            <option>В доставке</option>
+        </select></p></button></li>
+        </ul>
+        <ul class="order_dishes">
+            <li>Заказ №3<button type="button"><p><select>
+            <option>Принят</option>
+            <option>Готовится</option>
+            <option>Готов</option>
+            <option>В доставке</option>
+            <option>В доставке</option>
+        </select></p></button></li>
         </ul>
         <button type="submit">Применить</button>
     </div>
     
     <div class="change_dish">
-        <h3>Название блюда</h3>
+        <h3>Изменение блюда</h3>
         <p class="dish_id">ID блюда</p>
         <p>Имя: <input type="text" class="dish_name" placeholder="Сюда имя"></p>
         <p>Ссылка на фото: <input type="text" class="dish_photo_url placeholder="Ссылка на фото"></p>
@@ -54,6 +71,13 @@
             <option>Будущее</option>
         </select></p>
         <button type="submit">Создать</button>
+    </div>
+    <div class="change_employe">
+        <h3>Создание сотрудника</h3>
+        <p>Имя: <input type="text" class="dish_name" placeholder="Сюда имя"></p>
+        <p>Пароль <input type="text" class="dish_description" placeholder="Сюда пароль"></p>
+        </select></p>
+        <button type="submit">Применить</button>
     </div>
 </body>
 </html>
