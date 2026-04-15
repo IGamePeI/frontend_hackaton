@@ -11,35 +11,41 @@
 <body>
     <header>
         <a href="./index.html">
-            <img src="./static/images/LogoSite.png" alt="logo" class="logo">
+            <img src="./static/images/LogoSite.png" alt="Логотип" class="logo">
             <div class="links">
-                <a href="#past_menu">Прошлое</a>
-                <a href="#present_menu">Настоящее</a>
-                <a href="#future_menu">Будущее</a>
-                <a href="">
-                    <i class="fa-solid fa-trash"></i>
+                <a class="header_link" href="#past_menu">Прошлое</a>
+                <a class="header_link" href="#present_menu">Настоящее</a>
+                <a class="header_link" href="#future_menu">Будущее</a>
+                <a class="header_link" href="">
+                    <i class="fa-solid fa-cart"></i>
                 </a>
             </div>
         </a>
     </header>
     <div class="container">
-        <div id="past_menu" class="menu">
+        <div id="present_menu" class="menu">
             <span class="menu_name">Меню настоящего</span>
             <div class="dishes_list_past">
                 <div class="dish_item">
-                    
+                    <div class="dish">
+                        <img src="./static/images/tut.png" alt="" class="dish_img">
+                        <h3 class="dish_title">Название блюда</h3>
+                        <p class="dish_price">много рублей</p>
+                        <p class="dish_weight">много грамм(мл)</p>
+                        <button class="dish_button">В корзину</button>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div id="present_menu" class="menu">
+        <div id="future_menu" class="menu">
             <span class="menu_name">Меню будущего</span>
             <div class="dishes_list_present">
 
             </div>
         </div>
 
-        <div id="future_menu" class="menu">
+        <div id="past_menu" class="menu">
             <span class="menu_name">Меню прошлого</span>
             <div class="dishes_list_future">
 
