@@ -8,29 +8,37 @@
     <link rel="stylesheet" href="./static/styles/style.css">
     <title>Document</title>
 </head>
-<header>
-    <img src="./static/images/LogoSite.png" alt="Лого">
-    <div class="header_links">
-        <a href="./index.html">Меню</a>
-        <a href="./cart.html">Корзина</a>
-        <a href="./login.html"><img class="avatar_icon" src="./static/images/avatar-icon.png"></a>
-    </div>
-</header>
 <body>
+    <header>
+        <img src="./static/images/LogoSite.png" alt="Лого">
+        <div class="header_links">
+            <a href="./index.html">Меню</a>
+            <a href="./cart.html">Корзина</a>
+        </div>
+    </header>
     <img class="slider" src="./static/images/слайдер.png">
     <div class="menu">
-        <h1>Наше меню:</h1>
-        <div class="dishes" id="dishes">
+        <span>Наше меню <span style="color: #FF7A2B;">прошлого</span></span>
+        <div id="past_menu" class="dishes">
             <div class="dish" id="dish">
-                <img src="./static/images/tut.png" alt="dish_img">
+                <div class="out_img">
+                    <img src="./static/images/tut.png" alt="dish_img">
+                </div>
                 <span id="dish_name" class="dish_name">Рассольник</span>
                 <span id="dish_weight" class="dish_weight">350 г</span>
-                <div class="buy_dish" id="buy_dish">
-                    <span id="dish_price" class="dish_price">499 руб</span>
-                    <button class="add_to_cart" id="add_to_cart">Добавить в корзину</button>
-                </div>
+                <span id="dish_price" class="dish_price">499 руб</span>
+                <button class="add_to_cart" id="add_to_cart">Добавить в корзину</button>
             </div>
         </div>
+        <span>Наше меню <span style="color: #FF7A2B;">настоящего</span></span>
+        <div id="present_menu" class="dishes">
+        </div>
+        <span>Наше меню <span style="color: #FF7A2B;">будущего</span></span>
+        <div id="future_menu" class="dishes">
+
+
+        </div>
     </div>
+    <script src="./static/scripts/script.js"></script>
 </body>
 </html>
