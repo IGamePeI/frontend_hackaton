@@ -11,63 +11,59 @@
 <body>
     <header>
         <a href="./index.html">
-            <img src="./static/images/LogoSite.png" alt="logo" class="logo">
+            <img src="./static/images/LogoSite.png" alt="Логотип" class="logo">
             <div class="links">
-                <a href="#past_menu">Прошлое</a>
-                <a href="#present_menu">Настоящее</a>
-                <a href="#future_menu">Будущее</a>
-                <a href="">
-                    <i class="fa-solid fa-trash"></i>
+                <a class="header_link" href="#past_menu">Прошлое</a>
+                <a class="header_link" href="#present_menu">Настоящее</a>
+                <a class="header_link" href="#future_menu">Будущее</a>
+                <a class="header_link" href="">
+                    <i class="fa-solid fa-cart"></i>
                 </a>
             </div>
         </a>
     </header>
     <div class="container">
-        <div id="past_menu" class="menu">
+        <div id="present_menu" class="menu">
             <span class="menu_name">Меню настоящего</span>
-            <div class="dishes_list_past" id="dishes_list_past">
-                <div class="dish-item">
-                    <img class="dish_img" src="${dish.img_url}">
-                    <div class="dish_data">
-                        <span class="dish_name">${dish.name}</span>
-                        <span class="dish_desc">${dish.description}</span>
-                        <div class="dish-params">
-                            <span class="weight">${dish.weight} г</span>
-                            <span class="price">${dish.price} руб</span>
-                        </div>
-                        <button id="add-button"></button>
-                    </div>
-                </div>
-
-                <div class="dish-item">
-                    <img class="dish_img" src="${dish.img_url}">
-                    <div class="dish_data">
-                        <span class="dish_name">${dish.name}</span>
-                        <span class="dish_desc">${dish.description}</span>
-                        <div class="dish-params">
-                            <span class="weight">${dish.weight} г</span>
-                            <span class="price">${dish.price} руб</span>
-                        </div>
-                        <button id="add-button"></button>
+            <div class="dishes_list_past">
+                <div class="dish_item">
+                    <div class="dish">
+                        <img src="./static/images/tut.png" alt="" class="dish_img">
+                        <h3 class="dish_title">Название блюда</h3>
+                        <p class="dish_price">много рублей</p>
+                        <p class="dish_weight">много грамм(мл)</p>
+                        <button class="dish_button">В корзину</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="present_menu" class="menu">
+        <div id="future_menu" class="menu">
             <span class="menu_name">Меню будущего</span>
             <div class="dishes_list_present" id="dishes_list_present">
 
             </div>
         </div>
 
-        <div id="future_menu" class="menu">
+        <div id="past_menu" class="menu">
             <span class="menu_name">Меню прошлого</span>
             <div class="dishes_list_future" id="dishes_list_future">
 
             </div>
         </div>
     </div>
+    <footer>
+        <div class="footer_logo">
+        <img src="./static/images/LogoSite.png" alt="logo" class="logo">
+        <p>©2026</p>
+        </div>
+        <div class="links">
+                <a href="#past_menu">Прошлое</a>
+                <a href="#present_menu">Настоящее</a>
+                <a href="#future_menu">Будущее</a>
+        </div>
+        <div class="footer_nomer">+ 7 (977) 443 64 83</div>
+    </footer>
     <script src="./static/scripts/script.js"></script>
 </body>
 </html>
