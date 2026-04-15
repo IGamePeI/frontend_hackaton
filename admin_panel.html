@@ -7,77 +7,23 @@
     <title>Панель Администратора</title>
 </head>
 <body>
-    <div class="order">
-        <h3>Заказы</h3>
-        </select>
-        <ul class="order_dishes">
-            <li>Заказ №1<button type="button"><p><select>
-            <option>Принят</option>
-            <option>Готовится</option>
-            <option>Готов</option>
-            <option>В доставке</option>
-            <option>В доставке</option>
-        </select></p></button></li>
-        </ul>
-        <ul class="order_dishes">
-            <li>Заказ №2<button type="button"><p><select>
-            <option>Принят</option>
-            <option>Готовится</option>
-            <option>Готов</option>
-            <option>В доставке</option>
-            <option>В доставке</option>
-        </select></p></button></li>
-        </ul>
-        <ul class="order_dishes">
-            <li>Заказ №3<button type="button"><p><select>
-            <option>Принят</option>
-            <option>Готовится</option>
-            <option>Готов</option>
-            <option>В доставке</option>
-            <option>В доставке</option>
-        </select></p></button></li>
-        </ul>
-        <button type="submit">Применить</button>
+    <div class="collector_section" id="collector_section">
+        <div class="orders">
+
+        </div>
     </div>
-    
-    <div class="change_dish">
-        <h3>Изменение блюда</h3>
-        <p class="dish_id">ID блюда</p>
-        <p>Имя: <input type="text" class="dish_name" placeholder="Сюда имя"></p>
-        <p>Ссылка на фото: <input type="text" class="dish_photo_url placeholder="Ссылка на фото"></p>
-        <p>Описание: <input type="text" class="dish_description" placeholder="Сюда описание"></p>
-        <p>Цена: <input type="number" class="dish_price" placeholder="Сюда цену"></p>
-        <p>Вес: <input type="number" class="dish_weight" placeholder="Сюда вес"></p>
-        <p>Категория: <select>
-            <option>Прошлое</option>
-            <option selected>Настоящее</option>
-            <option>Будущее</option>
-        </select></p>
-        <p>Создан:</p>
-        <p>Обновлен:</p>
-        <button type="submit">Применить</button>
-    </div>
-    <div class="create_dish">
-        <h3>Создать блюдо</h3>
-        <p class="dish_id">ID блюда</p>
-        <p>Имя: <input type="text" class="dish_name" placeholder="Сюда имя"></p>
-        <p>Ссылка на фото: <input type="text" class="dish_photo_url placeholder="Ссылка на фото"></p>
-        <p>Описание: <input type="text" class="dish_description" placeholder="Сюда описание"></p>
-        <p>Цена: <input type="number" class="dish_price" placeholder="Сюда цену"></p>
-        <p>Вес: <input type="number" class="dish_weight" placeholder="Сюда вес"></p>
-        <p>Категория: <select>
-            <option>Прошлое</option>
-            <option>Настоящее</option>
-            <option>Будущее</option>
-        </select></p>
-        <button type="submit">Создать</button>
-    </div>
-    <div class="change_employe">
-        <h3>Создание сотрудника</h3>
-        <p>Имя: <input type="text" class="dish_name" placeholder="Сюда имя"></p>
-        <p>Пароль <input type="text" class="dish_description" placeholder="Сюда пароль"></p>
-        </select></p>
-        <button type="submit">Применить</button>
+    <div class="admin_section" id="admin_section">
+        <div class="dishes">
+
+        </div>
+
+        <div class="user_create">
+            <form id="create_user_form" class="create_user_form"></form>
+            <input type="text" id="username" class="username" placeholder="Username" required>
+            <input type="email" id="email" class="email" placeholder="Email" required>
+            <input type="password" id="password" class="password" placeholder="Password" required>
+            <input type="text" id="username" class="username" placeholder="Role" required>
+        </div>
     </div>
 </body>
 </html>

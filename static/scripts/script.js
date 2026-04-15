@@ -3,14 +3,21 @@ let cart = localStorage.getItem("cart");
 if(!cart) {
     cart = [];
 }
-let addButton = document.getElementById('add-button');
+let addButton = document.getElementById('add_to_cart');
 
 
 function createDishCard(dish, index) {
     const card = document.createElement('div');
-    card.className = 'dish_item';
+    card.className = 'dish';
+    card.id = 'dish';
     card.innerHTML = `
-        
+        <img src="${dish.image_url}" alt="dish_img">
+        <span id="dish_name" class="dish_name" dish_id="${dish.id}">${dish.name}</span>
+        <span id="dish_weight" class="dish_weight">${dish.weight} г</span>
+        <div class="buy_dish" id="buy_dish">
+            <span id="dish_price" class="dish_price">${dish.price} руб</span>
+            <button class="add_to_cart" id="add_to_cart">Добавить в корзину</button>
+        </div>
     `;
 
     return card;
@@ -19,14 +26,7 @@ function createDishCard(dish, index) {
 function renderMenus(dishes) {
     dishes.forEach((vac, index) => {
         const card = createDishCard(vac, index);
-        var container;
-        if (vac.category == "past") {
-            container = document.getElementById('dishes_list_past');
-        } else if (vac.category == "present") {
-            container = document.getElementById('dishes_list_present');
-        } else {
-            container = document.getElementById('dishes_list_future');
-        }
+        container = document.getElementById('dish');
         container.appendChild(card);
     });
 }
