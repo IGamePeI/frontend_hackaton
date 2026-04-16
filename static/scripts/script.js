@@ -2,10 +2,7 @@ let allDishes = [];
 let cart = localStorage.getItem("cart");
 if(!cart) {
     cart = [];
-} else {
-    cart = JSON.parse(cart);
 }
-
 function createDishCard(dish) {
     const card = document.createElement('div');
     card.className = 'dish';
