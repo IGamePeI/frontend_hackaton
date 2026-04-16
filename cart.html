@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/style.css">
     <link rel="stylesheet" href="./static/styles/cart.css">
     <title>Корзина</title>
 </head>
@@ -16,31 +16,21 @@
             <a href="./cart.html">Корзина</a>
         </div>
     </header>
-
-    <div class="menu">
-        <span>Корзина</span>
-        <div id="cart_container" class="dishes">
-            <!-- сюда попадают блюда из localStorage -->
+    
+    <div class="cart_container">
+        <span class="cart_title">Ваша <span style="color: #FF7A2B;">корзина</span></span>
+        
+        <div id="cart_items" class="cart_items">
         </div>
-
-        <div class="order_form">
-            <span>Оформить заказ</span>
-
-            <div>
-                <label for="address">Адрес доставки</label>
-                <input type="text" id="address" placeholder="Укажите адрес">
-            </div>
-
-            <div>
-                <label for="user_id">ID пользователя</label>
-                <input type="number" id="user_id" placeholder="0" value="0">
-            </div>
-
-            <button id="place_order" disabled="true">Оформить заказ</button>
-            <span id="order_status"></span>
+            
+            <form id="order_form" class="order_form">
+                <span class="form_title">Данные заказа</span>
+                <input type="text" id="delivery_address" class="form_input" placeholder="Адрес доставки *" required>
+                <button type="submit" class="place_order_btn" id="place_order_btn">Оформить заказ</button>
+            </form>
         </div>
     </div>
-
+    
     <script src="./static/scripts/cart.js"></script>
 </body>
 </html>

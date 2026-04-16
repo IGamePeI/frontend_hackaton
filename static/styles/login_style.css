@@ -13,7 +13,6 @@
     margin-left: 500px;
     min-width: 200px;
     padding-left: 200px;
-    background-color: dodgerblue;
     display: flex;
     font-size: 1rem;
     font-weight: 400;
@@ -28,7 +27,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border: 1px solid #49cbe2;
     padding: 10px 28px;
     font-weight: 400;
     font-size: 16px;
